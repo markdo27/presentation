@@ -1,6 +1,8 @@
 # MRKD Presentation Room
 
-A private presentation library with server-side sign-in, viewer and admin roles, and the existing 34-slide MRKD workshop. The slide source stays editable in `vibecoding-deck.html`.
+The 34-slide MRKD vibecoding workshop, published at **<https://markdo27.github.io/presentation/>**, together with an optional self-hosted presentation room that puts the same deck behind server-side sign-in with viewer and admin roles. The slide source stays editable in `vibecoding-deck.html`.
+
+> **The published deck is public.** GitHub Pages serves `vibecoding-deck.html` as the site index, so anyone with the link can read it. The sign-in described below gates the self-hosted app, not the Pages site.
 
 ## Start locally
 
@@ -30,7 +32,9 @@ Authentication controls future access. A person who is allowed to view the prese
 
 ## Hosting
 
-The private GitHub repository stores source code; it does not publish this app. This project requires a Node server with persistent storage, **not GitHub Pages or a static HTML host**.
+GitHub Pages publishes the deck only: a static copy of `vibecoding-deck.html` served as the site index, with no accounts and no access control. That deployment is `.github/workflows/pages.yml`, and it is the whole of it.
+
+The presentation room is a separate thing and is not what Pages runs. It requires a Node server with persistent storage and **cannot run on GitHub Pages or any static host**.
 
 1. Create the first admin locally before exposing the service, or run the first-time setup through a local connection on the host before switching to production.
 2. Use one Node process with a private, persistent `DATA_DIR` volume. Securely provision the initialized database on that volume, without committing it to Git.
