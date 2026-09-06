@@ -1,11 +1,9 @@
-node_modules/
-.data/
-.env
-.env.*
-!.env.example
+# Local scratch and editor state
 .build/
 .claude/
 .codex/
 *.log
+
+# Left over from the removed sign-in server; kept out of the repo
+.data/
 *.sqlite*
-coverage/
