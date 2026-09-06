@@ -36,6 +36,25 @@ Type scales from `--u`, a unit tied to the smaller of viewport width and
 height. Size things in `calc(var(--u) * n)` rather than pixels and they will
 hold at any projector resolution.
 
+## The live demo
+
+Slide 29 is interactive. Drop a Latin `.ttf`, `.otf` or `.woff` onto it and
+the deck measures that font, recovers its accents, and composes six Vietnamese
+characters from them on the spot.
+
+It runs the real self-extraction idea in raster rather than vector: a mark is
+recovered by differencing a precomposed glyph against its own base letter, so
+`á − a` leaves exactly the ink the acute added. Those marks are then replaced
+using the placement constants measured in the Vinafont methodology — marks
+centre on the bounding box, the acute sits 0.09 reference-heights right of
+centre and the grave 0.07 left, the dot below hangs 0.166 x-heights under the
+baseline. Horn, hook above and dot below exist in no Latin font, so they are
+drawn from the font's own measured stroke weight, which is what the real
+engine does as a last resort.
+
+The font is read in the browser and never uploaded. There are no libraries
+behind it — `FontFace`, canvas and pixel arithmetic only.
+
 ## Deck contents
 
 The Liquid.Font specimens embed the original engine and glyph data from the

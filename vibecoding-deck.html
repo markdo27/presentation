@@ -460,6 +460,34 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
 @media(max-width:700px){.slide{padding:10px}.meta{font-size:14px}.big{font-size:18px}.mindmap{grid-template-columns:1fr}.composition{flex-wrap:wrap}.vn{font-size:60px}.demo-controls{gap:10px;flex-wrap:wrap}.foot .pg{margin-right:0}}
 @media print{body,.deck{height:auto;overflow:visible}.slide{height:100vh;break-after:page;page-break-after:always}.nav,.rail-top{display:none}.cell{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 
+/* ---- VINAFONT live demo ---- */
+.vn-drop{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:22px;margin-top:14px;border:1px dashed var(--hair);border-radius:14px;transition:border-color .2s ease,background-color .2s ease}
+.vn-drop.over{border-color:var(--red);background:rgba(215,25,33,.05)}
+.vn-drop .meta{text-transform:none;font-size:calc(var(--u)*1.02)}
+#vn-pick{font:inherit;font-size:calc(var(--u)*1.1);letter-spacing:.1em;text-transform:uppercase;background:var(--ink-deep);color:var(--on-ink);border:0;padding:11px 20px;border-radius:9px;cursor:pointer;transition:background-color .2s ease}
+#vn-pick:hover,#vn-pick:focus-visible{background:var(--red);outline:none}
+.vn-metrics{margin-top:16px}
+.vn-mrow b{font-size:calc(var(--u)*1.3);letter-spacing:.04em;text-transform:none;word-break:break-all}
+.vn-mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.vn-mgrid div{display:flex;flex-direction:column;gap:2px}
+.vn-mgrid span{font-size:calc(var(--u)*.92);letter-spacing:.12em;color:var(--ink-faint)}
+.vn-mgrid b{font-size:calc(var(--u)*1.18);font-variant-numeric:tabular-nums}
+.vn-sources{flex-shrink:0}
+.vn-src{list-style:none;margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 8px}
+.vn-src li{display:flex;align-items:center;gap:6px;font-size:calc(var(--u)*.85);letter-spacing:.07em;border:1px solid var(--on-ink-hair);border-radius:99px;padding:4px 10px;white-space:nowrap}
+.vn-src i{width:8px;height:8px;border-radius:50%;flex-shrink:0;background:var(--ink-faint)}
+.vn-src li.ok i{background:var(--red)}
+.vn-src li.no i{background:transparent;box-shadow:inset 0 0 0 1px var(--on-ink-soft)}
+.vn-src em{font-style:normal;text-transform:uppercase;color:var(--on-ink-soft);font-size:calc(var(--u)*.72);letter-spacing:.1em}
+.vn-output{flex:1;min-height:0;display:grid;grid-template-columns:repeat(6,1fr);align-items:center;gap:calc(var(--u)*.8);padding:calc(var(--u)*.8) 0}
+.vn-cell{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
+.vn-cell canvas{height:calc(var(--u)*9.4);width:auto;max-width:100%;display:block;filter:invert(1)}
+.vn-cell figcaption{display:flex;flex-direction:column;align-items:center;gap:1px;text-align:center}
+.vn-cell figcaption b{font-size:calc(var(--u)*1.15);text-transform:none;color:var(--red)}
+.vn-cell figcaption span{font-size:calc(var(--u)*.8);letter-spacing:.04em;color:var(--on-ink-soft);text-transform:none;line-height:1.35}
+.vn-msg{font-size:calc(var(--u)*1.15);line-height:1.6;text-transform:none;color:var(--on-ink-soft);max-width:34ch;text-align:center}
+#vn-note{color:var(--on-ink-soft);text-transform:none;font-size:calc(var(--u)*.98);border-top:1px solid var(--on-ink-hair);padding-top:12px}
+@media(max-width:700px){.vn-output{grid-template-columns:repeat(3,1fr)}.vn-cell canvas{height:76px}}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -526,7 +554,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
     </div>
   </div>
 
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">01 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">01 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-2">
@@ -543,7 +571,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
     <p class="big">Three different AI coding agents. One designer directing all three.</p>
   </div>
 
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">02 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">02 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-3">
@@ -566,7 +594,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       </div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">03 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">03 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-4">
@@ -586,7 +614,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       </div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">04 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">04 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-5">
@@ -613,7 +641,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <p class="meta" style="margin-top:calc(var(--u)*1)">Writing the brief is the beginning. Most of the work happens in the feedback.</p></div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">05 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">05 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-6">
@@ -643,7 +671,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">I choose the agent that fits the task in front of me.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">06 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">06 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-7">
@@ -663,7 +691,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">Liquid Font and Vinafont show what this process looks like in practice.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">07 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">07 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-8">
@@ -680,7 +708,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
     <div class="cell"><span class="dot h1 push">D</span><div class="hairline"><div class="lbl">FIGMA PLUGIN</div><div class="meta num">/ 3</div></div></div>
     <div class="cell"><span class="dot h1 push">E</span><div class="hairline"><div class="lbl">DATA &amp; DOCUMENT</div><div class="meta num">/ 2</div></div></div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">08 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">08 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-9">
@@ -714,7 +742,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <div class="go" style="border-top-color:var(--on-ink-hair);color:var(--red)">CASE STUDY 01 — AHEAD<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 8.5 8.5 3.5M4.5 3.5H8.5V7.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></div>
     </a>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">09 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">09 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-10">
@@ -752,7 +780,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <div class="push" style="padding-top:calc(var(--u)*1.4)"><span class="meta"><span class="code">SAIGON 1985</span>A street of Vietnamese shopfront signs filling the screen.</span></div>
     </a>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">10 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">10 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-11">
@@ -783,7 +811,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <div class="push" style="padding-top:calc(var(--u)*1.6)"><span class="meta"><span class="code">TRANSLAATE</span>Upload a document and translate it while the original layout stays intact. Proof the loop works past visual design.</span></div>
     </a>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">11 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">11 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-12">
@@ -810,7 +838,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">Published to Figma Community — free installs, everything runs client-side.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">12 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">12 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-13">
@@ -827,7 +855,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       IDEA → EXECUTION → PRODUCTION &nbsp;·&nbsp; MARKDO27.GITHUB.IO/GENERATIVEFONT_CREATOR
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">13 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">13 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-14">
@@ -856,10 +884,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">One shared set of controls gave the alphabet a consistent feel.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">14 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">14 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-15"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / THE BUILD</h2></div><div class="row r3 grow"><div class="cell"><span class="eyebrow">01 / IDEA</span><h3 class="dot h2 push">A font I could<br>keep changing</h3><p class="meta" style="margin-top:2em">I began with the look I wanted, then worked out which parts needed to stay editable.</p></div><div class="cell"><span class="eyebrow">02 / ENGINE</span><h3 class="dot h2 push">A skeleton<br>for each letter</h3><p class="meta" style="margin-top:2em">Nodes set the structure and stroke weight. The engine blends those strokes into a soft outline.</p></div><div class="cell"><span class="eyebrow">03 / TOOL</span><h3 class="dot h2 push">The whole<br>alphabet, together</h3><p class="meta" style="margin-top:2em">A letter editor and specimen preview let me judge changes across the family before exporting.</p></div></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">15 / 34</span></div></section>
+<section class="slide" id="slide-15"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / THE BUILD</h2></div><div class="row r3 grow"><div class="cell"><span class="eyebrow">01 / IDEA</span><h3 class="dot h2 push">A font I could<br>keep changing</h3><p class="meta" style="margin-top:2em">I began with the look I wanted, then worked out which parts needed to stay editable.</p></div><div class="cell"><span class="eyebrow">02 / ENGINE</span><h3 class="dot h2 push">A skeleton<br>for each letter</h3><p class="meta" style="margin-top:2em">Nodes set the structure and stroke weight. The engine blends those strokes into a soft outline.</p></div><div class="cell"><span class="eyebrow">03 / TOOL</span><h3 class="dot h2 push">The whole<br>alphabet, together</h3><p class="meta" style="margin-top:2em">A letter editor and specimen preview let me judge changes across the family before exporting.</p></div></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">15 / 35</span></div></section>
 
 <section class="slide" id="slide-16">
   <div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / HOW THE ENGINE WORKS</h2></div>
@@ -928,14 +956,14 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">The same engine shapes all 42 glyphs. Shared settings keep the alphabet related as the forms change.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">16 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">16 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-17"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / ONE ALPHABET, THREE FEELS</h2></div><div class="row r3 grow"><div class="cell "><span class="eyebrow">01 / BUBBLE</span><div class="font-word grow" data-word="OOZE" data-preset="bubble"></div><p class="meta">Lighter mass, more space inside each letter.</p></div><div class="cell cell--ink"><span class="eyebrow">02 / LIQUID</span><div class="font-word grow" data-word="OOZE" data-preset="liquid"></div><p class="meta">Soft joins and a fuller stroke.</p></div><div class="cell "><span class="eyebrow">03 / MOLTEN</span><div class="font-word grow" data-word="OOZE" data-preset="molten"></div><p class="meta">More weight and melt. The counters begin to close.</p></div></div><div class="cell takeaway"><p class="big">These specimens use the actual Liquid Font engine and its preset values.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">17 / 34</span></div></section>
+<section class="slide" id="slide-17"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / ONE ALPHABET, THREE FEELS</h2></div><div class="row r3 grow"><div class="cell "><span class="eyebrow">01 / BUBBLE</span><div class="font-word grow" data-word="OOZE" data-preset="bubble"></div><p class="meta">Lighter mass, more space inside each letter.</p></div><div class="cell cell--ink"><span class="eyebrow">02 / LIQUID</span><div class="font-word grow" data-word="OOZE" data-preset="liquid"></div><p class="meta">Soft joins and a fuller stroke.</p></div><div class="cell "><span class="eyebrow">03 / MOLTEN</span><div class="font-word grow" data-word="OOZE" data-preset="molten"></div><p class="meta">More weight and melt. The counters begin to close.</p></div></div><div class="cell takeaway"><p class="big">These specimens use the actual Liquid Font engine and its preset values.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">17 / 35</span></div></section>
 
-<section class="slide" id="slide-18"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / A LETTER STARTS WITH NODES</h2></div><div class="row split-4-6 grow"><div class="cell"><span class="eyebrow">THE EDITABLE STRUCTURE</span><div id="node-example" class="grow"></div><p class="meta">A node holds a position and a radius. The chains connect them into strokes.</p></div><div class="cell cell--ink"><span class="eyebrow">THE GENERATED LETTER</span><div class="font-word grow" data-word="A" data-preset="liquid"></div><p class="meta">The engine blends the strokes, traces the boundary and smooths the outline.</p></div></div><div class="cell takeaway"><p class="big">The outline follows the structure. A small node edit can change the whole silhouette.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">18 / 34</span></div></section>
+<section class="slide" id="slide-18"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / A LETTER STARTS WITH NODES</h2></div><div class="row split-4-6 grow"><div class="cell"><span class="eyebrow">THE EDITABLE STRUCTURE</span><div id="node-example" class="grow"></div><p class="meta">A node holds a position and a radius. The chains connect them into strokes.</p></div><div class="cell cell--ink"><span class="eyebrow">THE GENERATED LETTER</span><div class="font-word grow" data-word="A" data-preset="liquid"></div><p class="meta">The engine blends the strokes, traces the boundary and smooths the outline.</p></div></div><div class="cell takeaway"><p class="big">The outline follows the structure. A small node edit can change the whole silhouette.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">18 / 35</span></div></section>
 
-<section class="slide" id="slide-19"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / ONE EDIT, FOUR LETTERS</h2></div><div class="cell grow"><div class="top"><span class="eyebrow">TRY THE SHARED NODE</span><label class="meta"><input type="checkbox" id="sync" checked> Global Edit</label></div><div id="sync-letters" class="grow"></div><div class="demo-controls"><label for="node-radius">First node radius <output id="radius-value">+0</output></label><input id="node-radius" type="range" min="-9" max="18" value="0"><button id="reset-demo" type="button">Reset</button></div><p class="meta">Adjust B. With Global Edit on, D, H and P receive the same radius change at node 0. Turn it off to change B alone.</p></div><div class="cell takeaway"><p class="big">The fun is seeing a single decision ripple through the family. Every letter still needs a quick visual check.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">19 / 34</span></div></section>
+<section class="slide" id="slide-19"><div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / ONE EDIT, FOUR LETTERS</h2></div><div class="cell grow"><div class="top"><span class="eyebrow">TRY THE SHARED NODE</span><label class="meta"><input type="checkbox" id="sync" checked> Global Edit</label></div><div id="sync-letters" class="grow"></div><div class="demo-controls"><label for="node-radius">First node radius <output id="radius-value">+0</output></label><input id="node-radius" type="range" min="-9" max="18" value="0"><button id="reset-demo" type="button">Reset</button></div><p class="meta">Adjust B. With Global Edit on, D, H and P receive the same radius change at node 0. Turn it off to change B alone.</p></div><div class="cell takeaway"><p class="big">The fun is seeing a single decision ripple through the family. Every letter still needs a quick visual check.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">19 / 35</span></div></section>
 
 <section class="slide" id="slide-20">
   <div class="bar"><span class="dot">◈</span><h2>LIQUID.FONT / INTO PRODUCTION</h2></div>
@@ -969,7 +997,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <span class="meta meta--up faint">MARKDO27.GITHUB.IO/GENERATIVEFONT_CREATOR</span>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">20 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">20 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-21">
@@ -990,7 +1018,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       </div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">21 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">21 / 35</span></div>
 </section>
 
 <section class="slide" id="slide-22">
@@ -1011,12 +1039,12 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <div class="hairline lbl">THE LETTERS SHOULD FEEL LIKE THEY BELONG</div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">22 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">22 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-23"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / HOW THE APPROACH CHANGED</h2></div><div class="row r3 grow"><div class="cell"><span class="eyebrow">01 / FIRST ATTEMPT</span><h3 class="dot h2 push">Draw the<br>missing marks</h3><p class="meta" style="margin-top:2em">I tried rebuilding accents from stroke weight and contrast. The code worked, but the marks felt wrong.</p></div><div class="cell"><span class="eyebrow">02 / NEXT VERSION</span><h3 class="dot h2 push">Use marks<br>from real fonts</h3><p class="meta" style="margin-top:2em">I added reference fonts, a matching library and extraction from existing letters. Synthesis became the fallback.</p></div><div class="cell"><span class="eyebrow">03 / REFINEMENT</span><h3 class="dot h2 push">Measure the<br>placement</h3><p class="meta" style="margin-top:2em">I compared regenerated letters with the originals, then used those differences to improve the engine.</p></div></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">23 / 34</span></div></section>
+<section class="slide" id="slide-23"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / HOW THE APPROACH CHANGED</h2></div><div class="row r3 grow"><div class="cell"><span class="eyebrow">01 / FIRST ATTEMPT</span><h3 class="dot h2 push">Draw the<br>missing marks</h3><p class="meta" style="margin-top:2em">I tried rebuilding accents from stroke weight and contrast. The code worked, but the marks felt wrong.</p></div><div class="cell"><span class="eyebrow">02 / NEXT VERSION</span><h3 class="dot h2 push">Use marks<br>from real fonts</h3><p class="meta" style="margin-top:2em">I added reference fonts, a matching library and extraction from existing letters. Synthesis became the fallback.</p></div><div class="cell"><span class="eyebrow">03 / REFINEMENT</span><h3 class="dot h2 push">Measure the<br>placement</h3><p class="meta" style="margin-top:2em">I compared regenerated letters with the originals, then used those differences to improve the engine.</p></div></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">23 / 35</span></div></section>
 
-<section class="slide" id="slide-24"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE BUILD MAP</h2></div><div class="cell grow mindmap"><div class="map-center"><span class="eyebrow">THE QUESTION</span><h3 class="dot h2">Can this font<br>speak Vietnamese?</h3></div><div class="map-branches"><div class="map-branch"><span class="lbl">READ THE FONT</span><p class="meta">Which letters and marks already exist? What are the proportions?</p></div><div class="map-branch"><span class="lbl">FIND THE MARKS</span><p class="meta">Reference font, existing accents, extracted shapes or the matching library.</p></div><div class="map-branch"><span class="lbl">BUILD THE LETTERS</span><p class="meta">Scale the accents, position them, and make room for stacked marks.</p></div><div class="map-branch"><span class="lbl">PROOF THE RESULT</span><p class="meta">Check words, compare against known letters, then export a draft.</p></div></div></div><div class="cell takeaway"><p class="big">Each branch became a part of the tool, with a visible result I could check.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">24 / 34</span></div></section>
+<section class="slide" id="slide-24"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE BUILD MAP</h2></div><div class="cell grow mindmap"><div class="map-center"><span class="eyebrow">THE QUESTION</span><h3 class="dot h2">Can this font<br>speak Vietnamese?</h3></div><div class="map-branches"><div class="map-branch"><span class="lbl">READ THE FONT</span><p class="meta">Which letters and marks already exist? What are the proportions?</p></div><div class="map-branch"><span class="lbl">FIND THE MARKS</span><p class="meta">Reference font, existing accents, extracted shapes or the matching library.</p></div><div class="map-branch"><span class="lbl">BUILD THE LETTERS</span><p class="meta">Scale the accents, position them, and make room for stacked marks.</p></div><div class="map-branch"><span class="lbl">PROOF THE RESULT</span><p class="meta">Check words, compare against known letters, then export a draft.</p></div></div></div><div class="cell takeaway"><p class="big">Each branch became a part of the tool, with a visible result I could check.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">24 / 35</span></div></section>
 
 <section class="slide" id="slide-25">
   <div class="bar"><span class="dot">◈</span><h2>VINAFONT / FINDING THE RIGHT MARK</h2></div>
@@ -1048,16 +1076,39 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <span class="tier-tag">LAST RESORT</span>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">25 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">25 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-26"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / BUILDING A STACKED LETTER</h2></div><div class="cell grow"><span class="eyebrow">CHARACTER CONSTRUCTION / SCHEMATIC</span><div class="composition"><div><span class="vn">a</span><span class="meta">Base letter</span></div><span class="operator">+</span><div><span class="vn red">◌̂</span><span class="meta">Circumflex</span></div><span class="operator">+</span><div><span class="vn red">◌́</span><span class="meta">Acute tone</span></div><span class="operator">=</span><div><span class="vn">ấ</span><span class="meta">Composed letter</span></div></div><p class="big">The acute needs room above the circumflex. Its height and horizontal position must work with both shapes.</p></div><div class="cell takeaway"><p class="big">a, â, ấ. The construction is simple to describe. The spacing takes care.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">26 / 34</span></div></section>
+<section class="slide" id="slide-26"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / BUILDING A STACKED LETTER</h2></div><div class="cell grow"><span class="eyebrow">CHARACTER CONSTRUCTION / SCHEMATIC</span><div class="composition"><div><span class="vn">a</span><span class="meta">Base letter</span></div><span class="operator">+</span><div><span class="vn red">◌̂</span><span class="meta">Circumflex</span></div><span class="operator">+</span><div><span class="vn red">◌́</span><span class="meta">Acute tone</span></div><span class="operator">=</span><div><span class="vn">ấ</span><span class="meta">Composed letter</span></div></div><p class="big">The acute needs room above the circumflex. Its height and horizontal position must work with both shapes.</p></div><div class="cell takeaway"><p class="big">a, â, ấ. The construction is simple to describe. The spacing takes care.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">26 / 35</span></div></section>
 
-<section class="slide" id="slide-27"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE HORN CHANGES THE LETTER</h2></div><div class="row r2 grow"><div class="cell"><span class="eyebrow">A CONNECTED MARK</span><div class="vn-pair">o <span class="red">ơ</span></div><p class="big">The horn joins the upper right of the o. The connection should feel like part of the original stroke.</p></div><div class="cell cell--ink"><span class="eyebrow">A TONE ABOVE IT</span><div class="vn-pair">ơ <span class="red">ớ</span></div><p class="big" style="color:var(--on-ink-soft)">The acute sits above the vowel. It needs clear space around the horn.</p></div></div><div class="cell takeaway"><p class="big">Construction examples in the deck’s typeface, illustrating placement rather than generated Vinafont output.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">27 / 34</span></div></section>
+<section class="slide" id="slide-27"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE HORN CHANGES THE LETTER</h2></div><div class="row r2 grow"><div class="cell"><span class="eyebrow">A CONNECTED MARK</span><div class="vn-pair">o <span class="red">ơ</span></div><p class="big">The horn joins the upper right of the o. The connection should feel like part of the original stroke.</p></div><div class="cell cell--ink"><span class="eyebrow">A TONE ABOVE IT</span><div class="vn-pair">ơ <span class="red">ớ</span></div><p class="big" style="color:var(--on-ink-soft)">The acute sits above the vowel. It needs clear space around the horn.</p></div></div><div class="cell takeaway"><p class="big">Construction examples in the deck’s typeface, illustrating placement rather than generated Vinafont output.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">27 / 35</span></div></section>
 
-<section class="slide" id="slide-28"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE LETTERS IN A LINE</h2></div><div class="cell grow"><span class="eyebrow">PROOFING SAMPLE / DECK TYPEFACE</span><div class="vn-proof">Tiếng Việt<br><span class="red">ở khắp mọi nơi.</span></div><div class="row r3"><p class="meta"><b>Stacked marks</b><br>Look at ế and ắ. Are the accents clear and comfortably spaced?</p><p class="meta"><b>Marks below</b><br>Look at ệ and ọ. Is there enough room below the baseline?</p><p class="meta"><b>The whole line</b><br>Do ở and ơ keep the same rhythm as the surrounding letters?</p></div></div><div class="cell takeaway"><p class="big">An isolated glyph can look fine. A sentence shows whether the letters work together.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">28 / 34</span></div></section>
+<section class="slide" id="slide-28"><div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE LETTERS IN A LINE</h2></div><div class="cell grow"><span class="eyebrow">PROOFING SAMPLE / DECK TYPEFACE</span><div class="vn-proof">Tiếng Việt<br><span class="red">ở khắp mọi nơi.</span></div><div class="row r3"><p class="meta"><b>Stacked marks</b><br>Look at ế and ắ. Are the accents clear and comfortably spaced?</p><p class="meta"><b>Marks below</b><br>Look at ệ and ọ. Is there enough room below the baseline?</p><p class="meta"><b>The whole line</b><br>Do ở and ơ keep the same rhythm as the surrounding letters?</p></div></div><div class="cell takeaway"><p class="big">An isolated glyph can look fine. A sentence shows whether the letters work together.</p></div><div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">28 / 35</span></div></section>
 
 <section class="slide" id="slide-29">
+  <div class="bar"><span class="dot">◈</span><h2>VINAFONT / TRY IT ON YOUR OWN FONT</h2></div>
+  <div class="row split-3-7 grow">
+    <div class="cell">
+      <span class="eyebrow">01 / GIVE IT A LATIN FONT</span>
+      <div id="vn-drop" class="vn-drop">
+        <input type="file" id="vn-font-input" accept=".ttf,.otf,.woff,.woff2,font/ttf,font/otf,font/woff" hidden>
+        <button type="button" id="vn-pick">Choose a font file</button>
+        <p class="meta">or drop a <b>.ttf</b>, <b>.otf</b> or <b>.woff</b> here. It is read in this browser and never uploaded.</p>
+      </div>
+      <div id="vn-metrics" class="vn-metrics"></div>
+    </div>
+    <div class="cell cell--ink">
+      <span class="eyebrow">02 / VIETNAMESE, COMPOSED LIVE</span>
+      <div id="vn-output" class="vn-output"><p class="vn-msg">Upload a font and it will build these six characters from the letters that font already has.</p></div>
+      <div id="vn-sources" class="vn-sources"></div>
+      <p id="vn-note" class="meta" hidden>Marks carved from your own font sit at measured offsets. The horn, hook and dot below are drawn from your font's stroke weight, because no Latin font carries them.</p>
+    </div>
+  </div>
+  <div class="cell takeaway"><p class="big">This runs the self-extraction path only, in raster. The real tool works on vector outlines and can also borrow marks from a 519-family library — but the idea on screen is the same one: <b>á minus a leaves the acute.</b></p></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">29 / 35</span></div>
+</section>
+
+<section class="slide" id="slide-30">
   <div class="bar"><span class="dot">◈</span><h2>VINAFONT / THE BENCHMARK RESULTS</h2></div>
 
   <div class="row split-7-3 grow">
@@ -1100,10 +1151,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       </div>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">29 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">30 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-30">
+<section class="slide" id="slide-31">
   <div class="bar"><span class="dot">◈</span><h2>VINAFONT / WHAT IT CANNOT DO</h2></div>
 
   <div class="cell" style="flex-shrink:0">
@@ -1127,10 +1178,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <p class="meta push" style="padding-top:calc(var(--u)*1.5)">Use the output for proofing and mock-ups, then refine the letters with a type designer. The benchmark helps show where that work is needed.</p>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">30 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">31 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-31">
+<section class="slide" id="slide-32">
   <div class="bar"><span class="dot">◈</span><h2>ALSO / SAIGON 1985, THE VIETNAMESE SIGN WALL</h2></div>
 
   <div class="row r3 grow">
@@ -1152,10 +1203,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <div class="cell" style="flex-shrink:0">
     <p class="big">The same process, closer to home. A chance to make something from the lettering I see around the city.</p>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">31 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">32 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-32">
+<section class="slide" id="slide-33">
   <div class="bar"><span class="dot">08</span><h2>LESSONS / WHAT SIX MONTHS TAUGHT ME</h2></div>
 
   <div class="row r2 grow" style="grid-template-rows:repeat(2,1fr)">
@@ -1180,10 +1231,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <p class="meta push" style="padding-top:calc(var(--u)*1.4)">The Vinafont benchmark showed me which marks needed work. That made the next revision much easier to direct.</p>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">32 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">33 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-33">
+<section class="slide" id="slide-34">
   <div class="bar"><span class="dot">09</span><h2>WHAT'S NEXT</h2></div>
 
   <div class="row r2 grow" style="grid-template-rows:repeat(2,1fr)">
@@ -1208,10 +1259,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <p class="meta push" style="padding-top:calc(var(--u)*1.4)">Try a running app where music helps set the pace and breathing rhythm. Keep making small things I want to use.</p>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">33 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">34 / 35</span></div>
 </section>
 
-<section class="slide" id="slide-34">
+<section class="slide" id="slide-35">
   <div class="row r3 grow">
     <div class="cell cell--play">
       <div class="goo" aria-hidden="true"><div class="goo-inner" id="gooInner3"></div></div>
@@ -1244,7 +1295,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
       <span class="meta meta--up faint" style="text-align:right">HAPPINESS SAIGON<br/>2026</span>
     </div>
   </div>
-  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">34 / 34</span></div>
+  <div class="foot"><span>MRKD / VIBECODING WORKSHOP</span><span class="pg">35 / 35</span></div>
 </section>
 
 </div>
@@ -1814,6 +1865,286 @@ document.getElementById('node-example').innerHTML='<svg viewBox="-25 -30 150 175
 const radius=document.getElementById('node-radius'),sync=document.getElementById('sync');
 function draw(){let d=Number(radius.value);document.getElementById('radius-value').textContent=(d>=0?'+':'')+d;document.getElementById('sync-letters').innerHTML=[...'BDHP'].map((c,i)=>'<div class="sync-glyph" style="color:'+(i===0?'var(--red)':'var(--ink)')+'">'+svg(c,'liquid',(sync.checked||i===0)?d:0)+'<span class="eyebrow">'+c+(i===0?' / EDITING':sync.checked?' / SYNCED':' / UNCHANGED')+'</span></div>').join('');}
 radius.addEventListener('input',draw);sync.addEventListener('change',draw);document.getElementById('reset-demo').addEventListener('click',()=>{radius.value=0;sync.checked=true;draw()});draw();
+})();
+</script>
+<script>
+/* ---------------------------------------------------------------------------
+   VINAFONT / live demo.
+
+   Runs the self-extraction path from the real tool, in raster rather than
+   vector: a mark is recovered by differencing a precomposed glyph against its
+   own base letter (a-acute minus a leaves exactly the ink the acute added),
+   then replaced on other letters using the placement constants measured in
+   the project's METHODOLOGY. Marks no Latin font carries — horn, hook above,
+   dot below — are synthesised from the font's own stroke weight, which is what
+   the real engine does as its last resort.
+
+   No libraries, no network. The font never leaves the browser.
+   --------------------------------------------------------------------------- */
+(function(){
+  var picker = document.getElementById('vn-font-input');
+  if (!picker) return;
+
+  var drop = document.getElementById('vn-drop'),
+      pick = document.getElementById('vn-pick'),
+      out  = document.getElementById('vn-output'),
+      met  = document.getElementById('vn-metrics'),
+      srcE = document.getElementById('vn-sources'),
+      note = document.getElementById('vn-note');
+
+  var FAM = null, SEQ = 0, S = 240;
+
+  function cv(w,h){ var c=document.createElement('canvas'); c.width=w; c.height=h; return c; }
+
+  // One glyph on its own canvas, with a known baseline and origin.
+  function draw(ch, size){
+    var W = Math.ceil(size*2.3), H = Math.ceil(size*2.6),
+        bl = Math.round(size*1.75), ox = Math.round(size*0.65);
+    var c = cv(W,H), x = c.getContext('2d', {willReadFrequently:true});
+    x.textBaseline = 'alphabetic';
+    x.font = size + 'px "' + FAM + '"';
+    x.fillStyle = '#111';
+    x.fillText(ch, ox, bl);
+    return {c:c, x:x, W:W, H:H, bl:bl, ox:ox};
+  }
+  function alpha(r){ return r.x.getImageData(0,0,r.W,r.H).data; }
+
+  function box(d,W,H){
+    var mnX=W, mnY=H, mxX=-1, mxY=-1;
+    for (var y=0;y<H;y++) for (var x=0;x<W;x++)
+      if (d[(y*W+x)*4+3] > 28){
+        if(x<mnX)mnX=x; if(x>mxX)mxX=x; if(y<mnY)mnY=y; if(y>mxY)mxY=y;
+      }
+    return mxX<0 ? null : {x:mnX,y:mnY,w:mxX-mnX+1,h:mxY-mnY+1,r:mxX,b:mxY};
+  }
+
+  /* ---- 1. measure the font, the way fontAnalyzer does ---- */
+  function metrics(){
+    var H=draw('H',S), hb=box(alpha(H),H.W,H.H);
+    var X=draw('x',S), xb=box(alpha(X),X.W,X.H);
+    var L=draw('l',S), la=alpha(L), lb=box(la,L.W,L.H);
+
+    var sw = 0;
+    if (lb){
+      var runs=[];
+      for (var y=lb.y+Math.round(lb.h*0.35); y<lb.y+Math.round(lb.h*0.7); y++){
+        var run=0, best=0;
+        for (var x=lb.x; x<=lb.r; x++){
+          if (la[(y*L.W+x)*4+3] > 28){ run++; if(run>best) best=run; } else run=0;
+        }
+        if (best) runs.push(best);
+      }
+      runs.sort(function(a,b){return a-b;});
+      sw = runs[Math.floor(runs.length/2)] || 0;
+    }
+    return {
+      cap: hb ? H.bl-hb.y : S*0.70,
+      xh:  xb ? X.bl-xb.y : S*0.50,
+      sw:  sw || Math.round(S*0.075)
+    };
+  }
+
+  /* ---- 2. recover a mark by differencing against its base letter ---- */
+  function extract(accCh, basCh){
+    var A=draw(accCh,S), B=draw(basCh,S);
+    var da=alpha(A), db=alpha(B);
+    var bb=box(db,B.W,B.H);
+    if (!bb) return null;
+
+    var o=cv(A.W,A.H), ox=o.getContext('2d',{willReadFrequently:true});
+    var img=ox.createImageData(A.W,A.H), any=false;
+    // Only ink strictly above the base letter's own ink: that is the mark, and
+    // it drops the hairline slivers the two outlines disagree about.
+    var cut = bb.y;
+    for (var y=0; y<cut; y++){
+      for (var x=0; x<A.W; x++){
+        var i=(y*A.W+x)*4, a=da[i+3];
+        if (a>28 && db[i+3]<40){
+          img.data[i]=17; img.data[i+1]=17; img.data[i+2]=17; img.data[i+3]=a; any=true;
+        }
+      }
+    }
+    if (!any) return null;
+    ox.putImageData(img,0,0);
+    var mb = box(ox.getImageData(0,0,A.W,A.H).data, A.W, A.H);
+    if (!mb || mb.h < S*0.025 || mb.w < S*0.02) return null;
+    return {c:o, box:mb};
+  }
+
+  /* ---- 3. synthesise the marks no Latin font carries ---- */
+  function pen(ctx,M,k){
+    ctx.strokeStyle='#111'; ctx.fillStyle='#111';
+    ctx.lineCap='round'; ctx.lineJoin='round';
+    ctx.lineWidth = M.sw*(k||0.85);
+  }
+  function synthHorn(ctx, bb, M){
+    var h = 0.26*M.cap, ax = bb.r - M.sw*0.30, ay = bb.y + bb.h*0.20;
+    pen(ctx,M,0.82); ctx.beginPath(); ctx.moveTo(ax,ay);
+    ctx.bezierCurveTo(ax+h*0.58, ay-h*0.12, ax+h*0.66, ay-h*0.52, ax+h*0.32, ay-h*0.90);
+    ctx.stroke();
+  }
+  function synthHook(ctx, cx, topY, M){
+    var h = 0.30*M.cap, w = h*0.60;
+    pen(ctx,M,0.78); ctx.beginPath();
+    ctx.moveTo(cx-w*0.10, topY+h);
+    ctx.bezierCurveTo(cx-w*0.10, topY+h*0.42, cx+w*0.60, topY+h*0.48, cx+w*0.44, topY+h*0.14);
+    ctx.bezierCurveTo(cx+w*0.30, topY-h*0.08, cx-w*0.24, topY-h*0.02, cx-w*0.34, topY+h*0.28);
+    ctx.stroke();
+    return h;
+  }
+  function synthBreve(ctx, cx, topY, M){
+    var h = 0.20*M.cap, w = h*1.5;
+    pen(ctx,M,0.80); ctx.beginPath();
+    ctx.moveTo(cx-w/2, topY);
+    ctx.bezierCurveTo(cx-w/2, topY+h*1.5, cx+w/2, topY+h*1.5, cx+w/2, topY);
+    ctx.stroke();
+    return h;
+  }
+  function synthDot(ctx, cx, bl, M){
+    var r = M.sw*0.60, top = bl + 0.166*M.xh;   // measured: 0.166 x-heights below the baseline
+    pen(ctx,M); ctx.beginPath(); ctx.arc(cx, top+r, r, 0, Math.PI*2); ctx.fill();
+  }
+
+  /* ---- 4. compose one Vietnamese character ---- */
+  // Measured placement: marks centre on the base's bounding box, except the
+  // acute (+0.09 ref-height) and grave (-0.07), which follow their own lean.
+  var DX = { acute:0.09, grave:-0.07 };
+
+  function compose(baseCh, spec, M, marks){
+    var B = draw(baseCh, S);
+    var o = cv(B.W, B.H), x = o.getContext('2d',{willReadFrequently:true});
+    x.drawImage(B.c, 0, 0);
+    var bb = box(alpha(B), B.W, B.H);
+    if (!bb) return null;
+
+    var refH = baseCh === baseCh.toUpperCase() ? M.cap : M.xh;
+    var cx = bb.x + bb.w/2;          // bounding-box centre, not the ink centroid
+    var top = bb.y;
+
+    if (spec.horn){ synthHorn(x, bb, M); }
+
+    (spec.above||[]).forEach(function(key, idx){
+      var gap = idx === 0 ? refH*0.05 : M.sw*0.34;
+      var dx  = (DX[key] || 0) * refH;
+      var mk  = marks[key];
+      if (mk && mk.c){
+        var tx = (cx + dx) - (mk.box.x + mk.box.w/2);
+        var ty = (top - gap - mk.box.h) - mk.box.y;
+        x.drawImage(mk.c, tx, ty);
+        top = top - gap - mk.box.h;
+      } else if (key === 'hookAbove'){
+        var h = synthHook(x, cx+dx, top - gap - 0.30*M.cap, M);
+        top = top - gap - h;
+      } else if (key === 'breve'){
+        var hb2 = synthBreve(x, cx+dx, top - gap - 0.20*M.cap, M);
+        top = top - gap - hb2*1.5;
+      }
+    });
+
+    if (spec.below === 'dot') synthDot(x, cx, B.bl, M);
+
+    // Uniform vertical window so every character scales identically on screen.
+    var t = Math.round(B.bl - M.cap*1.95), b = Math.round(B.bl + M.xh*0.62);
+    var res = box(x.getImageData(0,0,B.W,B.H).data, B.W, B.H) || bb;
+    var l = Math.max(0, res.x - M.sw), r = Math.min(B.W, res.r + M.sw);
+    var w = Math.max(1, r-l), h = Math.max(1, b-t);
+    var d = cv(w,h); d.getContext('2d').drawImage(o, l, t, w, h, 0, 0, w, h);
+    return d;
+  }
+
+  /* ---- 5. the demo set ---- */
+  var SET = [
+    { ch:'ế', base:'e', spec:{above:['circumflex','acute']},  recipe:'circumflex + acute' },
+    { ch:'ộ', base:'o', spec:{above:['circumflex'], below:'dot'}, recipe:'circumflex + dot below' },
+    { ch:'ả', base:'a', spec:{above:['hookAbove']},           recipe:'hook above' },
+    { ch:'ơ', base:'o', spec:{horn:true},                     recipe:'horn' },
+    { ch:'ữ', base:'u', spec:{horn:true, above:['tilde']},    recipe:'horn + tilde' },
+    { ch:'ằ', base:'a', spec:{above:['breve','grave']},       recipe:'breve + grave' }
+  ];
+
+  var WANT = [
+    ['acute','á','a'], ['grave','à','a'], ['circumflex','â','a'],
+    ['tilde','ã','a'], ['breve','ă','a']
+  ];
+  var LABEL = { acute:'Acute', grave:'Grave', circumflex:'Circumflex', tilde:'Tilde', breve:'Breve' };
+
+  function run(name){
+    var M = metrics();
+    var marks = {}, prov = [];
+
+    WANT.forEach(function(w){
+      var m = extract(w[1], w[2]);
+      if (m) marks[w[0]] = m;
+      prov.push({ key:w[0], got:!!m });
+    });
+
+    met.innerHTML =
+      '<span class="eyebrow">MEASURED FROM YOUR FONT</span>' +
+      '<div class="vn-mrow">' +
+        '<b>' + name.replace(/[<>&]/g,'') + '</b>' +
+      '</div>' +
+      '<div class="vn-mgrid">' +
+        '<div><span>Cap height</span><b>' + (M.cap/S).toFixed(3) + ' em</b></div>' +
+        '<div><span>x-height</span><b>' + (M.xh/S).toFixed(3) + ' em</b></div>' +
+        '<div><span>Stroke</span><b>' + (M.sw/S).toFixed(3) + ' em</b></div>' +
+      '</div>';
+
+    srcE.innerHTML =
+      '<span class="eyebrow" style="color:var(--on-ink-soft)">WHERE EACH MARK CAME FROM</span>' +
+      '<ul class="vn-src">' +
+      prov.map(function(p){
+        return '<li class="' + (p.got?'ok':'no') + '"><i></i>' + LABEL[p.key] +
+               '<em>' + (p.got ? 'from font' : 'synthesised') + '</em></li>';
+      }).join('') +
+      '<li class="no"><i></i>Horn / hook / dot<em>synthesised</em></li>' +
+      '</ul>';
+
+    out.innerHTML = '';
+    var frag = document.createDocumentFragment();
+    SET.forEach(function(s){
+      var d = compose(s.base, s.spec, M, marks);
+      var cell = document.createElement('figure');
+      cell.className = 'vn-cell';
+      if (d) cell.appendChild(d);
+      var cap = document.createElement('figcaption');
+      cap.innerHTML = '<b>' + s.ch + '</b><span>' + s.recipe + '</span>';
+      cell.appendChild(cap);
+      frag.appendChild(cell);
+    });
+    out.appendChild(frag);
+    note.hidden = false;
+  }
+
+  function load(file){
+    if (!file) return;
+    out.innerHTML = '<p class="vn-msg">Reading ' + file.name.replace(/[<>&]/g,'') + '…</p>';
+    file.arrayBuffer().then(function(buf){
+      var fam = 'vnfont-' + (++SEQ);
+      var ff = new FontFace(fam, buf);
+      return ff.load().then(function(loaded){
+        document.fonts.add(loaded);
+        FAM = fam;
+        return document.fonts.load('60px "' + fam + '"', 'HxláàâãăoeuAĐ');
+      }).then(function(){ run(file.name); });
+    }).catch(function(){
+      // Clear the previous font's readout, so a failed load never leaves
+      // measurements on screen that belong to a different file.
+      met.innerHTML = ''; srcE.innerHTML = ''; note.hidden = true;
+      out.innerHTML = '<p class="vn-msg">That file could not be read as a font. Try a .ttf, .otf or .woff.</p>';
+    });
+  }
+
+  pick.addEventListener('click', function(){ picker.click(); });
+  picker.addEventListener('change', function(e){ load(e.target.files && e.target.files[0]); });
+  ['dragenter','dragover'].forEach(function(t){
+    drop.addEventListener(t, function(e){ e.preventDefault(); drop.classList.add('over'); });
+  });
+  ['dragleave','drop'].forEach(function(t){
+    drop.addEventListener(t, function(e){ e.preventDefault(); drop.classList.remove('over'); });
+  });
+  drop.addEventListener('drop', function(e){
+    load(e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]);
+  });
 })();
 </script>
 </html>
