@@ -3,34 +3,22 @@ window.MRKD_PRESENTER_NOTES = {
   "slides": [
     {
       "number": 1,
-      "title": "VIBECODING",
+      "title": "OPENING",
       "time": "1:30",
       "sections": [
         {
           "label": "Say",
           "paragraphs": [
-            "Hey everyone, I’m Mark.",
-            "First thing: I’m a designer. I’m not a developer.",
-            "And I think that’s actually important for everything I’m going to show today.",
-            "About six months ago, I started experimenting with AI coding agents mostly out of curiosity.",
-            "That curiosity somehow turned into sixteen small tools.",
-            "Some useful.",
-            "Some stupid.",
-            "Some useful because they’re stupid.",
-            "Today I’m not really here to teach coding.",
-            "I want to talk about what happens when a designer suddenly has the ability to build their own tools."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“What happens when designers can design the tool, not only the output?”**"
-          ]
-        },
-        {
-          "label": "Delivery",
-          "paragraphs": [
-            "Slow opening. Look at audience. Don’t rush into screenshots."
+            "Hey everyone. I’m Mark.",
+            "I’m a designer. I’m not a developer, and I think that’s probably the most important thing to say before we start.",
+            "For most of my career, when I had an idea for a digital tool, the normal process was: sketch it, explain it to somebody technical, wait for it to be built, test it, send feedback, wait again.",
+            "About six months ago, that relationship changed quite dramatically for me.",
+            "I started experimenting with AI coding agents, mostly just out of curiosity.",
+            "And somehow that curiosity turned into sixteen little tools.",
+            "Some are useful. Some are stupid. Some are probably useful because they’re stupid.",
+            "But the important thing is: they exist.",
+            "Today I want to show you less about “how to code with AI” and more about **what happens when a designer suddenly has the ability to build their own tools.**",
+            "That’s the part I find interesting."
           ]
         }
       ]
@@ -43,30 +31,20 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Quick context.",
+            "So, quick context.",
             "Six months.",
             "Sixteen tools.",
-            "Five categories.",
+            "Five different categories.",
             "And zero dollars to publish them.",
-            "Zero dollars to publish, by the way.",
-            "The AI subscriptions are definitely not zero dollars.",
-            "What changed for me was the cost of experimentation.",
+            "Just to clarify: **zero dollars to publish.**",
+            "My AI subscriptions are definitely not zero dollars. Unfortunately.",
+            "But hosting these experiments on things like GitHub Pages and Vercel means I can have an idea tonight, build something, and tomorrow send somebody a URL.",
+            "That speed changed the way I think about experimentation.",
             "Before, I would ask:",
-            "“Is this worth building?”",
-            "Now I ask:",
-            "“Can I make something rough enough to test tonight?”"
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“The cost of trying something became very small.”**"
-          ]
-        },
-        {
-          "label": "Click cue",
-          "paragraphs": [
-            "Reveal numbers one by one if animated."
+            "“Is this idea worth building?”",
+            "Now I usually ask:",
+            "“Can I make something rough enough to test tonight?”",
+            "That is a very different creative mindset."
           ]
         }
       ]
@@ -79,20 +57,14 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "I’ll show you where this started.",
-            "Then how I currently work with AI agents.",
-            "Then we’ll look quickly at some of the tools.",
-            "After that I want to go deeper into two projects.",
+            "I’ll start with the experiment that got me into this.",
+            "Then I’ll explain what I mean when I say “vibecoding,” because the word is becoming a little bit abused.",
+            "We’ll look at the three agents I currently use.",
+            "Then I’ll show the workflow I normally follow.",
+            "After that, instead of showing sixteen tools one by one, I want to go deeper into two projects.",
             "Liquid.Font is the fun one.",
-            "Vinafont is where everything became much more serious.",
-            "And then I’ll finish with what I learned after six months of doing this."
-          ]
-        },
-        {
-          "label": "Delivery",
-          "paragraphs": [
-            "Fast. Don’t explain details yet.",
-            "# 01 / THE SPARK"
+            "Vinafont is the one where everything became much more complicated.",
+            "And at the end I’ll share what I think actually matters after doing this for six months."
           ]
         }
       ]
@@ -105,26 +77,22 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "This started with a very simple question.",
-            "What if a design tool could animate itself?",
-            "I was looking at tools like Space Type Generator.",
-            "What I liked wasn’t only the visual output.",
-            "It was the experience.",
-            "You move something.",
-            "Something immediately reacts.",
-            "You’re not designing one final artwork.",
-            "You’re designing a system that can keep producing different outcomes.",
-            "Normally I would save this idea somewhere and forget about it.",
-            "Probably in a folder called “ideas.”",
+            "It actually started from a very simple question.",
+            "**What if a design tool could animate itself?**",
+            "I had been looking at Space Type Generator.",
+            "And what interested me wasn’t only the visual output.",
+            "I liked the feeling of playing with it.",
+            "You change something and immediately something happens.",
+            "You’re not making one finished design.",
+            "You’re building a little system that can produce many designs.",
+            "And I remember thinking:",
+            "“I want this. But I want my version of this.”",
+            "Normally that thought would stop there.",
+            "Maybe I’d put it in a folder called “ideas.”",
+            "You know that folder.",
             "The graveyard.",
-            "But this time I opened an AI coding agent and tried building it."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“I didn’t want the artwork. I wanted the machine that could make the artwork.”**",
-            "# 02 / HOW I WORK WITH AI"
+            "But this time I opened an AI coding agent and tried describing what I wanted.",
+            "And that became the first experiment."
           ]
         }
       ]
@@ -138,37 +106,23 @@ window.MRKD_PRESENTER_NOTES = {
           "label": "Say",
           "paragraphs": [
             "When I say vibecoding, I don’t mean:",
-            "Write one amazing prompt and suddenly the app appears.",
+            "“Write one magical prompt and the computer makes your app.”",
             "That has basically never happened to me.",
-            "The workflow is closer to working with an incredibly fast junior creative technologist.",
-            "I explain something.",
-            "It builds it.",
+            "My process is much closer to working with a junior designer or creative technologist who is incredibly fast, has read everything on the internet, and occasionally does something completely insane.",
+            "I describe the idea.",
+            "It builds something.",
             "I open it.",
+            "I look at it.",
             "I say:",
-            "“No. That’s ugly.”",
-            "Then we continue.",
-            "So for me the prompt isn’t really the work.",
-            "The feedback loop is the work.",
-            "AI can write most of the code.",
-            "But I’m still deciding:",
-            "What feels good?",
-            "What feels wrong?",
-            "What stays?",
-            "What gets deleted?"
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“AI writes the code. I decide what survives.”**"
-          ]
-        },
-        {
-          "label": "Pause",
-          "paragraphs": [
-            "Let this sentence sit for a second.",
-            "This should become one of the memorable lines of the talk.",
-            "# 03 / THE TOOLBELT"
+            "“No. Not like that.”",
+            "And then we keep going.",
+            "So the prompt is not really the work.",
+            "**The feedback loop is the work.**",
+            "AI writes a lot of the code.",
+            "But I’m still deciding what feels good, what feels wrong, what stays and what gets deleted.",
+            "A line I would remember here is:",
+            "**AI writes the code. I decide what survives.**",
+            "And for me, that is still design."
           ]
         }
       ]
@@ -181,29 +135,21 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "I currently move between three agents.",
-            "Antigravity.",
-            "Claude.",
-            "Codex.",
-            "I don’t really care which model wins the internet every week.",
-            "I care about what helps with the job in front of me.",
-            "Antigravity is good when I want something built and visually checked in the browser.",
-            "Claude is good when the project becomes complicated and I need deeper reasoning around the codebase.",
-            "Codex I use a lot for smaller focused tasks running in parallel.",
-            "One agent might fix an interaction.",
-            "Another might clean up typography.",
-            "Another might investigate why exporting is broken.",
-            "So I’ve stopped thinking about one perfect AI.",
-            "I think of them more like a tiny production team."
-          ]
-        },
-        {
-          "label": "Optional joke",
-          "paragraphs": [
-            "Different strengths.",
+            "I currently move between three tools.",
+            "Antigravity, Claude and Codex.",
+            "I don’t really treat this like a model competition.",
+            "I don’t care who is number one on Twitter this week.",
+            "I care about which one helps me do the job in front of me.",
+            "Antigravity is useful when I want it to build something and then actually inspect the browser.",
+            "Claude is usually where I go when I have a complicated repository and I want to understand the problem deeply before touching anything.",
+            "Codex I use a lot for focused tasks running alongside everything else.",
+            "One might be fixing an interaction.",
+            "Another might be cleaning up typography.",
+            "Another could be investigating why the export is broken.",
+            "So instead of looking for one AI that does everything, I’ve started treating them more like a small creative production team.",
             "Different personalities.",
-            "Different ways of completely destroying your repository.",
-            "# 04 / THE LOOP"
+            "Different strengths.",
+            "Also occasionally different ways of destroying my code."
           ]
         }
       ]
@@ -217,35 +163,28 @@ window.MRKD_PRESENTER_NOTES = {
           "label": "Say",
           "paragraphs": [
             "Almost every tool follows the same loop.",
-            "First: spark.",
-            "Something annoys me.",
-            "Something takes too long.",
-            "Or I see something and think:",
-            "“I wonder if I can make that.”",
-            "Then prompt.",
-            "I describe what it should do, but also what it should feel like.",
-            "Then build.",
-            "I try to get something visible quickly.",
+            "First: **spark.**",
+            "Something annoys me. Something takes too long. Or I see something and think, “I wonder if I can make that.”",
+            "Second: **prompt.**",
+            "I try to explain not only what it should do, but what it should feel like.",
+            "That part matters.",
+            "Third: **build.**",
+            "I don’t spend too much time trying to create the perfect prompt. I want something visible as fast as possible.",
             "Because once I can see it, I can design it.",
-            "Then polish.",
-            "This is usually where most of the work actually happens.",
+            "Fourth: **polish.**",
+            "This is usually where most of my time goes.",
             "Typography.",
             "Spacing.",
             "Motion.",
+            "Interactions.",
             "Edge cases.",
-            "All the things AI says are finished when they’re absolutely not finished.",
-            "And finally: deploy.",
+            "All the things AI loves to say are “done” when they are absolutely not done.",
+            "And finally: **deploy.**",
+            "Put it online.",
             "Send somebody the URL.",
-            "Watch them use it wrong.",
-            "Learn something.",
-            "Repeat."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Once I can see it, I can design it.”**",
-            "# 05 / THE OUTPUT"
+            "Watch them use it incorrectly.",
+            "Then learn something.",
+            "That loop is really the entire workshop."
           ]
         }
       ]
@@ -258,24 +197,18 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "After six months, I looked back and realized there were sixteen tools.",
-            "I didn’t plan sixteen products.",
-            "They’re mostly responses to very small problems.",
+            "After about six months, I looked back and realized I had made sixteen of these things.",
+            "I didn’t deliberately plan sixteen products.",
+            "They’re mostly responses to small problems.",
             "Type.",
-            "Print.",
-            "Sound.",
-            "Figma.",
-            "Data.",
-            "And I think their smallness matters.",
-            "I’m not trying to build Adobe.",
-            "Nobody needs me to build Adobe.",
-            "I’m trying to build one useful behavior at a time."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“One behavior at a time.”**"
+            "Print and pattern.",
+            "Sound and visual.",
+            "Figma utilities.",
+            "Data and documents.",
+            "And I actually think the smallness is important.",
+            "I’m not trying to build the next Adobe.",
+            "Please, nobody needs me to build the next Adobe.",
+            "I’m trying to build **one useful behavior at a time.**"
           ]
         }
       ]
@@ -288,16 +221,17 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Type was one of the first areas I explored.",
-            "Circle is a modular type builder.",
-            "Typoman experiments with kinetic type.",
-            "And then Liquid.Font became much deeper.",
-            "Typography is perfect for these experiments because it already has rules.",
+            "These were some of the first ones.",
+            "Circle is basically a modular typeface builder.",
+            "Typoman lets me play with kinetic typography.",
+            "And then Liquid.Font became a much deeper rabbit hole.",
+            "A thing I learned very quickly is that typography is perfect for these experiments because type is already a system.",
+            "There are rules.",
             "Relationships.",
             "Constraints.",
-            "But you still need the human moment where somebody looks at the result and says:",
+            "And then there is the human part where you look at it and say:",
             "“That R looks terrible.”",
-            "That part is still very difficult to automate."
+            "That last part is difficult to automate."
           ]
         }
       ]
@@ -310,22 +244,17 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Then I started building generators.",
-            "Posters.",
-            "Patterns.",
+            "Then things became more playful.",
+            "Poster generators.",
             "Mosaics.",
-            "Thermal type.",
+            "Patterns.",
+            "Thermal typography.",
             "Vietnamese signage.",
-            "Not all tools need to solve a serious business problem.",
-            "Some tools can simply create interesting accidents.",
-            "Sometimes efficiency creates sameness.",
-            "So I’m also interested in tools that introduce controlled chaos."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“A tool can also be a machine for accidents.”**"
+            "These tools are less about solving some gigantic production problem.",
+            "A lot of them are simply machines for producing accidents.",
+            "And I think that’s valuable.",
+            "Because when software becomes too efficient, sometimes everything starts looking predictable.",
+            "A tool can also exist just to create conditions where something unexpected happens."
           ]
         }
       ]
@@ -338,25 +267,20 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Then I started leaving traditional graphic design.",
-            "Music sequencer.",
-            "VJ tools.",
-            "Data experiments.",
-            "Document translation.",
-            "And this is where I realized the skill I was actually learning wasn’t coding.",
-            "It was learning how to describe systems.",
+            "Then I started leaving graphic design.",
+            "I made a little music sequencer.",
+            "A VJ tool.",
+            "A lottery-data experiment.",
+            "A document translator.",
+            "And that was the point where I realized:",
+            "The important skill I was learning wasn't coding.",
+            "It was learning how to describe **systems.**",
             "Input.",
-            "Rules.",
             "Behavior.",
+            "Rules.",
             "Output.",
             "Feedback.",
-            "Once you start thinking this way, a poster generator and a MIDI sequencer aren’t actually that different."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“I wasn’t learning code. I was learning systems.”**"
+            "Once you start thinking that way, a poster generator and a MIDI sequencer aren’t actually that different."
           ]
         }
       ]
@@ -369,22 +293,17 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Eventually I started making utilities for software I already use.",
+            "And eventually I started making tools for software I already use.",
             "EPS importer.",
             "PDF importer.",
             "Website importer.",
-            "These are not glamorous.",
-            "Nobody is making a Behance case study about a PDF importer.",
+            "These are not sexy projects.",
+            "Nobody is putting the PDF importer on a Behance case study.",
             "But sometimes the boring tool is the useful one.",
-            "Before, saving five minutes might not justify development.",
-            "Now maybe it does."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“If something annoys you every Tuesday, maybe you can just fix Tuesday.”**",
-            "# CASE STUDY 01 / LIQUID.FONT"
+            "And this is another shift AI has created for me.",
+            "Previously, building a utility that saves five minutes might not justify development time.",
+            "Now it might.",
+            "If something annoys you every Tuesday, you can potentially just fix Tuesday."
           ]
         }
       ]
@@ -399,13 +318,12 @@ window.MRKD_PRESENTER_NOTES = {
           "paragraphs": [
             "So this is the first project I want to unpack properly.",
             "Liquid.Font.",
-            "The starting idea was simple.",
-            "I wanted to make these swollen, liquid, Y2K-looking letters.",
-            "But not as an image.",
-            "I wanted a real alphabet.",
-            "Editable.",
-            "Consistent.",
-            "Potentially exportable."
+            "The idea sounds simple:",
+            "I wanted to make these swollen, Y2K, liquid-looking letters.",
+            "But instead of generating an image, I wanted an actual alphabet.",
+            "Something editable.",
+            "Something consistent.",
+            "And ideally something I could export and type with."
           ]
         }
       ]
@@ -418,25 +336,21 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "The first version was basically visual effects.",
-            "Blur things.",
+            "My first approach was basically visual effects.",
+            "Blur shapes.",
             "Merge them.",
-            "Make them gooey.",
+            "Get something gooey.",
             "It looked cool.",
-            "But it wasn’t really typography.",
-            "Every change created another manual problem.",
-            "Then I realized I was asking the wrong question.",
-            "The question wasn’t:",
-            "“How do I make liquid letters?”",
-            "It became:",
-            "“How do I control how letters melt?”",
-            "That shift changed the entire project."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Sometimes the first job isn’t finding the answer. It’s finding the correct question.”**"
+            "But it wasn't really typography.",
+            "If I changed one letter, I had to manually fix everything around it.",
+            "So eventually I realized the actual brief wasn't:",
+            "“Make liquid letters.”",
+            "The brief was:",
+            "**“Give me a system that controls how letters melt.”**",
+            "That change in wording completely changed the tool.",
+            "And this happens constantly when working with AI.",
+            "Sometimes the first job isn't building the answer.",
+            "It's discovering the correct question."
           ]
         }
       ]
@@ -450,24 +364,16 @@ window.MRKD_PRESENTER_NOTES = {
           "label": "Say",
           "paragraphs": [
             "Eventually each letter became a skeleton.",
-            "Instead of drawing the final shape, I define points.",
+            "Instead of drawing the final outline, I define points.",
             "Those points have size.",
-            "Connections create strokes.",
-            "Then the engine generates the soft shape around the skeleton.",
-            "So think of it like bones.",
-            "The software grows the body around the bones.",
-            "Once that happened, the design became editable.",
-            "Move one bone.",
-            "The whole letter changes.",
-            "Change radius.",
-            "The weight changes.",
+            "Connections between them create the stroke.",
+            "And the engine generates the soft shape around that structure.",
+            "Think of it less like drawing a letter with Illustrator paths and more like giving the letter bones.",
+            "Then the software grows the body around them.",
+            "Once I had that, suddenly the design became editable.",
+            "Move the bone, the letter changes.",
+            "Change the radius, the weight changes.",
             "Now I had a system."
-          ]
-        },
-        {
-          "label": "Gesture",
-          "paragraphs": [
-            "Use your hand to show skeleton → body."
           ]
         }
       ]
@@ -482,24 +388,25 @@ window.MRKD_PRESENTER_NOTES = {
           "paragraphs": [
             "This slide looks technical.",
             "Don’t worry.",
-            "No exam.",
-            "The important part is the sequence.",
+            "There will be no exam.",
+            "The important idea is simply this:",
+            "I define a skeleton.",
+            "The system turns those lines into soft tubes.",
+            "Those tubes melt together.",
+            "Then the computer finds the outside edge.",
+            "Then it smooths that edge.",
+            "And finally it gives me something I can export.",
             "Skeleton.",
-            "Turn the lines into soft tubes.",
-            "Melt those tubes together.",
-            "Find the outer edge.",
-            "Smooth the edge.",
-            "Export the font.",
+            "Body.",
+            "Melt.",
+            "Outline.",
+            "Font.",
             "That’s basically it.",
-            "The interesting part for me is I didn’t know terms like marching squares before starting this.",
-            "I started from a visual behavior.",
-            "Then learned the technical concepts backwards."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“I learned the technology backwards from the visual result I wanted.”**"
+            "The funny thing is I didn't know “marching squares” or “smooth minimum union” before starting this.",
+            "AI let me work backwards.",
+            "I knew the visual behavior I wanted.",
+            "Then through building it, I started learning the technical concepts necessary to create that behavior.",
+            "That’s been much more useful to me than trying to learn programming abstractly."
           ]
         }
       ]
@@ -512,21 +419,16 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Once the engine existed, one alphabet could create different personalities.",
+            "Once the engine existed, one alphabet could produce different personalities.",
             "Bubble.",
             "Liquid.",
             "Molten.",
-            "Same structure.",
+            "Same underlying structure.",
             "Different parameters.",
-            "And this is where building software starts feeling very close to art direction.",
-            "I’m no longer designing one letter.",
-            "I’m designing the space of possible letters."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“You’re designing the rules of the aesthetic.”**"
+            "And this is where tool-making gets very close to art direction.",
+            "Because you're no longer designing one letter.",
+            "You're designing a **space of possible letters.**",
+            "You're deciding how far the system is allowed to move."
           ]
         }
       ]
@@ -539,17 +441,13 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Here you can see the DNA on the left.",
-            "And the result on the right.",
-            "Something as small as moving one node can dramatically change the final silhouette.",
-            "Traditional design often means designing the result.",
-            "Here I’m designing the cause of the result."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Instead of designing the result, I’m designing the cause.”**"
+            "Here you can see the structure directly.",
+            "The left side is basically the DNA.",
+            "The right side is what gets generated.",
+            "And something as small as moving one point can change the silhouette dramatically.",
+            "This is a really important idea for me.",
+            "When I work traditionally, I design the result.",
+            "When I build these tools, I’m often designing the **cause** of the result."
           ]
         }
       ]
@@ -562,29 +460,30 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "This became one of my favorite experiments.",
-            "If several letters share similar structures, can one edit propagate through the family?",
+            "This was an experiment I really liked.",
+            "If several letters share similar structures, what happens if one edit propagates through the family?",
             "Change B.",
             "D, H and P react.",
-            "Now I’m no longer editing isolated letters.",
-            "I’m designing relationships between letters."
+            "Now I'm not editing isolated letters anymore.",
+            "I'm designing relationships between letters."
           ]
         },
         {
           "label": "DEMO CUE",
           "paragraphs": [
-            "**Stop talking. Show it.**",
-            "Move one node.",
-            "Let audience see other letters react.",
-            "Try something exaggerated.",
-            "Undo."
+            "**[PAUSE AND DEMO THIS IF POSSIBLE.]**"
           ]
         },
         {
-          "label": "Say after demo",
+          "label": "Say during demo",
           "paragraphs": [
-            "This is why browser-based tools are interesting to me.",
-            "You can understand the system much faster by touching it than by explaining it."
+            "This is probably the moment where I would stop explaining and just play with it.",
+            "Because the whole point of the tool is the feedback.",
+            "Move this.",
+            "Everything changes.",
+            "Undo.",
+            "Try something stupid.",
+            "Sometimes stupid is good."
           ]
         }
       ]
@@ -597,24 +496,16 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Eventually this stopped being only an experiment.",
-            "It could export.",
-            "It had tests.",
-            "It lived online.",
-            "It could generate an OTF.",
-            "The whole thing was about four weeks of evenings.",
-            "And psychologically this was interesting.",
-            "At some point I stopped thinking:",
-            "“I’m experimenting with AI.”",
-            "It just became:",
-            "“I made this software.”"
-          ]
-        },
-        {
-          "label": "Pause",
-          "paragraphs": [
-            "Good place to breathe before Vinafont.",
-            "# CASE STUDY 02 / VINAFONT"
+            "And eventually this became a real little production tool.",
+            "It exports.",
+            "It has tests.",
+            "It runs online.",
+            "You can download an OTF.",
+            "The whole thing took around four weeks of evenings.",
+            "And this was important psychologically.",
+            "Because at some point it stopped feeling like an AI experiment.",
+            "It was just software I had made.",
+            "That was a weird moment."
           ]
         }
       ]
@@ -627,15 +518,16 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Liquid.Font started from play.",
+            "Liquid.Font was mostly about play.",
             "Vinafont started from frustration.",
-            "You find a beautiful Latin font.",
+            "You find a beautiful Latin typeface.",
             "You type Vietnamese.",
             "And suddenly...",
             "Nope.",
-            "Half the characters don’t exist.",
-            "So I wondered if I could build something that helps fill the gap.",
-            "This was much harder than Liquid.Font."
+            "Half the characters you need don’t exist.",
+            "So I thought:",
+            "Could I build something that helps fill that gap?",
+            "This ended up being much harder."
           ]
         }
       ]
@@ -648,28 +540,15 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Vietnamese looks simple because we use Latin characters.",
-            "But the diacritic system becomes quite complex.",
-            "Circumflex.",
-            "Tone marks.",
-            "Dots below.",
-            "The horn on ơ and ư.",
-            "And the marks can stack.",
-            "The challenge isn’t simply making the character exist.",
-            "It needs to feel like the original type designer made it."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“The letters shouldn’t only exist. They should belong.”**"
-          ]
-        },
-        {
-          "label": "Delivery",
-          "paragraphs": [
-            "Slow down here.",
-            "This is the conceptual heart of Vinafont."
+            "Vietnamese is interesting because we're using Latin letters, but with a much more complex system of marks.",
+            "You might need a circumflex.",
+            "Then a tone above the circumflex.",
+            "You have dots below.",
+            "And then we have characters like ơ and ư where the horn actually connects to the letter.",
+            "So you can’t just throw an accent somewhere above the glyph.",
+            "It needs to feel like the same designer created it.",
+            "That became the real challenge.",
+            "**The letters shouldn't only exist. They should belong.**"
           ]
         }
       ]
@@ -682,26 +561,20 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "My first instinct was very AI.",
-            "Let’s generate the missing shapes.",
-            "Technically, it worked.",
-            "Visually, it sucked.",
-            "And this became an important lesson.",
-            "The machine passed the technical test.",
-            "The design failed.",
-            "So I changed the strategy.",
-            "Instead of inventing accents, I started looking for evidence.",
-            "Does the mark exist somewhere else in the font?",
-            "Can I extract it?",
-            "Can I borrow from a stylistically similar font?",
-            "Can I study how professional type designers solved the same problem?",
-            "The project changed from generation to matching."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Generation became the last resort, not the first idea.”**"
+            "My first instinct was very AI:",
+            "“Let's generate the missing shapes.”",
+            "Technically it worked.",
+            "Visually it sucked.",
+            "And I think this slide is one of the most important in the presentation.",
+            "Because the machine passed the technical test.",
+            "The designer failed it.",
+            "So I changed the approach.",
+            "Instead of inventing accents, I started asking:",
+            "Can we find evidence inside real fonts?",
+            "Can we extract an accent that already exists?",
+            "Can we borrow a shape from an appropriate reference?",
+            "Can we measure how professional type designers solved the same problem?",
+            "The project changed from **generation** to **matching.**"
           ]
         }
       ]
@@ -714,26 +587,21 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Eventually it became a decision tree.",
+            "The tool eventually became a decision tree.",
             "Read the font.",
             "Understand what exists.",
             "Find the best mark.",
-            "Construct missing characters.",
+            "Build the missing characters.",
             "Proof everything.",
-            "This also changed the way I prompted AI.",
-            "Instead of saying:",
+            "This is where I started getting much more systematic with AI.",
+            "Instead of telling the agent:",
             "“Make Vietnamese work.”",
-            "I started giving it smaller questions.",
+            "I could give it smaller questions.",
             "How do we inspect the font?",
             "How do we identify marks?",
-            "How do we compare shapes?",
-            "How do we position stacked accents?"
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Breaking the design problem into smaller decisions made the AI much better.”**"
+            "How do we compare proportions?",
+            "How do we place stacked accents?",
+            "Each question became a part of the system."
           ]
         }
       ]
@@ -746,21 +614,16 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "So I created a hierarchy.",
-            "Best case: the user provides a reference.",
-            "Next: the correct mark already exists somewhere inside the font.",
-            "Sometimes you can literally extract it.",
-            "If a font has both o and ơ, you can compare them and isolate the horn.",
+            "And I created a hierarchy.",
+            "Best case: the user gives us a reference.",
+            "Next: the mark already exists somewhere in the font.",
+            "Even better, sometimes you can literally extract it.",
+            "If a font contains both o and ơ, subtracting one shape from the other can reveal the horn.",
             "Which is kind of ridiculous.",
             "But it works.",
-            "Then the system searches a reference library.",
-            "And only after that do we generate."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Use evidence first. Generate last.”**"
+            "Then there's a library of real fonts to find something stylistically close.",
+            "And only when all of that fails do we generate a mark.",
+            "So generation went from being the main idea to being the last resort."
           ]
         }
       ]
@@ -776,14 +639,16 @@ window.MRKD_PRESENTER_NOTES = {
             "This is where Vietnamese gets fun.",
             "Or horrible.",
             "Depending on your mood.",
-            "Take a.",
-            "Add circumflex.",
-            "â.",
-            "Add acute.",
-            "ấ.",
-            "Simple conceptually.",
-            "But visually, if one mark is slightly too high or too low, the character looks wrong immediately.",
-            "Typography is full of mathematically tiny problems that become visually huge."
+            "Here we have:",
+            "a.",
+            "Add circumflex: â.",
+            "Add acute tone: ấ.",
+            "The construction sounds easy.",
+            "But if the first mark is too tall...",
+            "or the second is too low...",
+            "or they're horizontally misaligned...",
+            "the whole glyph immediately feels wrong.",
+            "Typography is full of problems that are mathematically tiny and visually huge."
           ]
         }
       ]
@@ -796,18 +661,14 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "The horn is especially annoying because it isn’t really a floating accent.",
-            "It connects to the letter.",
-            "That connection needs to feel intentional.",
-            "And then you might still need another tone above it.",
-            "So now you’re balancing geometry, rhythm and negative space.",
-            "This is why technically correct doesn’t necessarily mean visually correct."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“In design, technically correct can still look completely wrong.”**"
+            "And the horn is particularly annoying.",
+            "Because this isn't simply a floating accent.",
+            "It physically joins the letter.",
+            "That connection needs to look intentional.",
+            "Then you might need another tone above it.",
+            "So now you're managing not only geometry but rhythm and negative space.",
+            "This is where “technically correct” becomes almost meaningless.",
+            "It has to look right."
           ]
         }
       ]
@@ -820,13 +681,15 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "And this taught me another thing.",
-            "Never judge typography one glyph at a time.",
+            "And this taught me another lesson.",
+            "Never evaluate a typeface one glyph at a time.",
             "Put it into words.",
-            "Put the words into sentences.",
+            "Put words into sentences.",
             "Suddenly problems become obvious.",
-            "A component can be perfect by itself and still destroy the system around it.",
-            "That idea goes way beyond typography."
+            "Something that looks beautiful by itself can completely destroy the rhythm of a line.",
+            "Same thing happens in design generally.",
+            "A component can be perfect.",
+            "The system can still be terrible."
           ]
         }
       ]
@@ -839,28 +702,22 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "DEMO CUE",
           "paragraphs": [
-            "Upload a Latin font.",
-            "Run conversion.",
-            "Show generated Vietnamese characters.",
-            "Zoom into one or two."
+            "**[DEMO HERE.]**"
           ]
         },
         {
-          "label": "Talk while demo runs",
+          "label": "Say during demo",
           "paragraphs": [
-            "What I like about doing this live is that the output might not be perfect.",
-            "That’s actually the point.",
-            "The result is a draft.",
-            "We’re not removing the designer.",
-            "We’re moving the designer further down the process.",
-            "Instead of manually building 135 glyphs before I can judge the idea, I can get a first pass quickly.",
-            "Then I use my eyes."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“AI doesn’t remove judgment. It moves judgment earlier.”**"
+            "This is where I’d actually upload something.",
+            "Take a Latin font.",
+            "Drop it in.",
+            "And now the browser tries to build Vietnamese characters from what it can discover.",
+            "What I like about doing this live is that it isn't guaranteed to look perfect.",
+            "And that's the point.",
+            "The output is a draft.",
+            "We are not trying to remove the designer.",
+            "We're trying to move the designer further down the process.",
+            "Instead of manually constructing 135 glyphs just to see whether the idea works, I can get a first pass and immediately start judging."
           ]
         }
       ]
@@ -873,28 +730,22 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "Then I had another problem.",
-            "I kept improving the algorithm.",
-            "But how do I know whether it’s actually improving?",
-            "So I created a benchmark.",
-            "Take professional fonts that already contain Vietnamese.",
-            "Hide those Vietnamese glyphs from the system.",
-            "Ask Vinafont to recreate them.",
-            "Then compare the generated version against the original designer’s version.",
-            "Across the test, around 82.8% landed inside the benchmark’s 10% threshold.",
-            "Median difference was around 5.1%.",
-            "But honestly, the percentage isn’t the interesting part.",
-            "The useful part is seeing where it fails.",
-            "Circumflex.",
-            "Đ stroke.",
-            "Specific accent positioning.",
-            "Now I know what to fix."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Measurement turns ‘make it better’ into an actual design direction.”**"
+            "Eventually I had another problem.",
+            "I kept changing the algorithm.",
+            "But I couldn't answer a simple question:",
+            "**Is it actually getting better?**",
+            "So I made a benchmark.",
+            "Take professionally designed fonts that already contain Vietnamese.",
+            "Hide the Vietnamese glyphs from the system.",
+            "Ask Vinafont to rebuild them.",
+            "Then compare what it generates against what the original designer actually drew.",
+            "Across this test, about 82.8% landed within the benchmark’s 10% threshold, with a median difference around 5.1%.",
+            "But the number isn't the important part.",
+            "The important thing is now I have **feedback that isn't just my opinion.**",
+            "It shows me where the system is weak.",
+            "Circumflex needs more work.",
+            "The Đ stroke needs more work.",
+            "Now I know where to spend the next hour."
           ]
         }
       ]
@@ -907,31 +758,22 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "And I wanted this slide because AI presentations often conveniently skip this part.",
-            "Vinafont isn’t finished.",
-            "It can lose kerning.",
+            "And I deliberately put this slide in here because AI presentations sometimes magically skip this part.",
+            "Vinafont is not finished.",
+            "It loses things.",
+            "Kerning.",
             "Hinting.",
-            "Variable font data.",
-            "Color tables.",
-            "And obviously licensing matters before modifying or redistributing typefaces.",
-            "So Vinafont is not:",
-            "Press button, perfect Vietnamese font.",
-            "It’s:",
-            "Get a useful first draft faster.",
-            "Then use your eyes."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“Not replacement. Compression.”**"
-          ]
-        },
-        {
-          "label": "Follow",
-          "paragraphs": [
-            "Compress the boring distance between idea and something you can judge.",
-            "# SAIGON 1985"
+            "Variable axes.",
+            "Colour tables.",
+            "And you absolutely need to check font licenses before modifying or redistributing anything.",
+            "So I don't think of Vinafont as:",
+            "“Press button, get perfect Vietnamese font.”",
+            "It's:",
+            "**Get a useful draft much faster, then use your eyes.**",
+            "And I think that's a healthier way to think about many AI tools.",
+            "Not replacement.",
+            "Compression.",
+            "Compress the boring distance between idea and something you can judge."
           ]
         }
       ]
@@ -944,32 +786,21 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "This project is much closer to home.",
-            "Recently I started noticing how many small Vietnamese businesses are using AI-generated signage.",
-            "And because many people are using similar prompts and tools, everything starts becoming strangely similar.",
-            "It’s not necessarily ugly.",
-            "Sometimes it’s actually cleaner.",
-            "But weirdly it made me miss the old ugly signage.",
+            "This one is closer to home.",
+            "I started noticing how many Vietnamese street signs are slowly becoming visually similar.",
+            "Especially now that small businesses can generate graphics very easily.",
+            "And weirdly, it made me miss the old badly designed signs.",
             "Five fonts.",
             "Three outlines.",
             "Everything stretched.",
             "Absolutely illegal typography.",
-            "But full of personality.",
-            "So I built this as a way of exploring that older visual language.",
-            "Painted boards.",
-            "Vinyl signage.",
-            "Storefront proportions.",
-            "Typography.",
-            "And this is something I want to keep exploring.",
-            "Because AI doesn’t only need to produce some generic futuristic aesthetic.",
-            "We can also use new technology to explore very local visual culture."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“New technology doesn’t have to create generic futures. It can also preserve local weirdness.”**",
-            "# LESSONS"
+            "But somehow... character.",
+            "So I made Saigon 1985 as a way of playing with that visual language.",
+            "You can resize the storefronts, edit the text, switch between old painted boards and later vinyl signage.",
+            "And this is something I want to explore more.",
+            "AI doesn't only have to create futuristic aesthetics.",
+            "We can also use new technology to explore **very local visual culture.**",
+            "And I think there's a huge amount of material in Vietnam that hasn't been turned into creative tools yet."
           ]
         }
       ]
@@ -982,39 +813,26 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "After sixteen tools, four things stayed with me.",
+            "So after sixteen tools, four things stayed with me.",
             "First:",
-            "Your eye still matters.",
-            "AI can make something function while making it visually terrible.",
-            "Second:",
-            "Iteration became cheap.",
-            "I can try weird ideas without spending a week defending why they should exist.",
-            "Third:",
-            "Keep the project small enough to finish.",
-            "Every time I try to build a giant platform, everything becomes painful.",
-            "The projects that work usually start from one small behavior.",
-            "And fourth:",
-            "Measure when you can.",
-            "The benchmark completely changed Vinafont because suddenly I wasn’t just saying:",
-            "“It feels better.”",
-            "I had something I could inspect."
-          ]
-        },
-        {
-          "label": "Key lines",
-          "paragraphs": [
             "**Your eye still matters.**",
-            "**Iteration is cheap.**",
-            "**Small enough to finish.**",
-            "**Measure when possible.**"
-          ]
-        },
-        {
-          "label": "Delivery",
-          "paragraphs": [
-            "Pause briefly after each one.",
-            "Let this slide breathe.",
-            "# WHAT'S NEXT"
+            "AI can make something function while making something visually terrible.",
+            "That problem is not disappearing.",
+            "Second:",
+            "**Iteration became almost free.**",
+            "Not literally free in money.",
+            "But cheap enough that I can try weird directions without needing to defend the idea first.",
+            "Third:",
+            "**Keep things small enough to finish.**",
+            "This is probably the biggest one.",
+            "Every time I try to build one giant platform, everything becomes painful.",
+            "The useful tools started with one behavior.",
+            "One annoying problem.",
+            "One curiosity.",
+            "And fourth:",
+            "**Measure when you can.**",
+            "My Vinafont benchmark completely changed how I directed the project.",
+            "Instead of saying “make it better,” I could point to where it was failing."
           ]
         }
       ]
@@ -1027,21 +845,14 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "There are a few things I want to keep pushing.",
+            "There are a few things I want to continue.",
             "Vinafont needs a real production export pipeline.",
-            "Liquid.Font needs more motion.",
-            "Saigon signage needs more research.",
-            "And I’m also interested in tools outside graphic design.",
-            "For example, I’ve been thinking about a running tool where music reacts to pace and breathing.",
-            "I have no idea if it will work.",
+            "I want Liquid.Font to move, maybe letters responding to forces and motion.",
+            "I want to expand the Saigon signage project.",
+            "And I'm currently interested in building tools outside traditional graphic design.",
+            "For example, I've been thinking about a running app where music reacts to pace and helps control breathing rhythm.",
+            "I have no idea whether that one will work.",
             "Which is exactly why I want to build it."
-          ]
-        },
-        {
-          "label": "Key line",
-          "paragraphs": [
-            "**“If I already know it works, it’s probably less interesting to prototype.”**",
-            "# CLOSING"
           ]
         }
       ]
@@ -1054,73 +865,71 @@ window.MRKD_PRESENTER_NOTES = {
         {
           "label": "Say",
           "paragraphs": [
-            "So I want to end with one idea.",
-            "Most conversations about AI and creativity ask:",
-            "“What can AI make for me?”",
-            "An image.",
-            "A video.",
+            "So I want to leave you with one idea.",
+            "When people talk about AI and creativity, the conversation is usually:",
+            "**“What can AI make for me?”**",
+            "Image.",
+            "Video.",
             "Copy.",
-            "A layout.",
-            "I think there’s another question that’s more interesting:",
-            "**What can I build for the way I create?**",
-            "Maybe there’s a task your team repeats every week.",
-            "Maybe there’s something boring everybody hates doing.",
-            "Maybe there’s a visual idea that was never important enough to justify development time.",
-            "That’s exactly what I would try building now.",
-            "Don’t start with a platform.",
-            "Start embarrassingly small.",
+            "Layout.",
+            "I think there's another question that is more interesting:",
+            "**“What can I build for the way I create?”**",
+            "Maybe there is something your team repeats every week.",
+            "Maybe there's a stupid production task everybody hates.",
+            "Maybe there's a visual idea you've wanted to play with but it was never important enough to justify development.",
+            "That is exactly the kind of thing I would try now.",
+            "Don't start by building a platform.",
+            "Build something embarrassingly small.",
             "Make one button work.",
             "Make one interaction feel good.",
-            "Send the URL to someone.",
+            "Send the URL to somebody.",
             "Watch them break it.",
-            "Then keep going.",
-            "The biggest change for me isn’t that AI turned me into a developer.",
-            "I still don’t really think of myself as one.",
+            "Then build the next thing.",
+            "The biggest change for me over these six months is not that AI taught me how to become a developer.",
+            "I still don't really consider myself one.",
             "It gave me a way to turn design decisions into functioning systems.",
-            "And maybe our output doesn’t always need to be the poster.",
+            "And that means, as designers, maybe our output doesn't always have to be the poster.",
             "Or the identity.",
             "Or the website.",
-            "Sometimes...",
-            "**the thing we design can be the tool that designs the thing.**",
-            "Thank you."
-          ]
-        },
-        {
-          "label": "Final line",
-          "paragraphs": [
-            "**“Let’s break some software.”**"
+            "**Sometimes the thing we design can be the tool that designs the thing.**",
+            "Thank you.",
+            "Let’s break some software."
           ]
         }
       ]
     }
   ],
   "transition": [
-    "Okay.",
-    "Instead of me talking more about building tools, let’s actually make something.",
+    "Instead of going directly into normal Q&A, I’d say:",
+    "Okay. Rather than me continuing to talk about making tools, let's actually make something.",
     "Think about your own workflow.",
-    "Don’t choose your biggest problem.",
-    "Choose something small and slightly annoying.",
+    "Not your biggest problem.",
+    "Actually, choose something small and slightly annoying.",
     "Something you currently do manually.",
     "Something you wish existed.",
-    "Or maybe just a visual behavior you want to play with.",
-    "We’ll pick one.",
-    "And the goal is not to finish an app today.",
-    "The goal is simply to go from:",
-    "“It would be cool if…”",
-    "to:",
-    "“Something is running in the browser.”",
-    "That first jump is the important part."
+    "Or just a visual behavior you've always wanted to play with.",
+    "We’ll pick one and turn it into a very rough tool.",
+    "The goal is not to finish an app today.",
+    "The goal is to go from:",
+    "**“It would be cool if...”**",
+    "to",
+    "**something running in a browser.**",
+    "That first jump is the important one."
   ],
   "cheat": [
-    "**“What happens when designers can design the tool, not only the output?”**",
+    "**“What if a design tool could animate itself?”**",
+    "**“The feedback loop is the work.”**",
     "**“AI writes the code. I decide what survives.”**",
-    "**“Once I can see it, I can design it.”**",
-    "**“I wasn’t learning code. I was learning systems.”**",
-    "**“Instead of designing the result, I’m designing the cause.”**",
-    "**“The letters shouldn’t only exist. They should belong.”**",
-    "**“Use evidence first. Generate last.”**",
-    "**“AI doesn’t remove judgment. It moves judgment earlier.”**",
-    "**“Not replacement. Compression.”**",
+    "**“Give me a system that controls how letters melt.”**",
+    "**“The letters shouldn't only exist. They should belong.”**",
+    "**“Is it actually getting better?”**",
+    "**“Get a useful draft much faster, then use your eyes.”**",
+    "**“Your eye still matters.”**",
+    "**“Iteration became almost free.”**",
+    "**“Keep things small enough to finish.”**",
+    "**“Measure when you can.”**",
+    "**“What can AI make for me?”**",
+    "**“What can I build for the way I create?”**",
     "**“Sometimes the thing we design can be the tool that designs the thing.”**"
   ],
   "timing": [
