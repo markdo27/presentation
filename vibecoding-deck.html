@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Doto:wght@300;500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="presenter.css"/>
 
 <style>
 /* ===========================================================================
@@ -481,7 +482,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
 .vn-src em{font-style:normal;text-transform:uppercase;color:var(--on-ink-soft);font-size:calc(var(--u)*.72);letter-spacing:.1em}
 .vn-output{flex:1;min-height:0;display:grid;grid-template-columns:repeat(6,1fr);align-items:center;gap:calc(var(--u)*.8);padding:calc(var(--u)*.8) 0}
 .vn-cell{display:flex;flex-direction:column;align-items:center;gap:8px;min-width:0}
-.vn-cell canvas{height:calc(var(--u)*9.4);width:auto;max-width:100%;display:block;filter:invert(1)}
+.vn-cell canvas{height:calc(var(--u)*8.7);width:auto;max-width:100%;display:block;filter:invert(1)}
 .vn-cell figcaption{display:flex;flex-direction:column;align-items:center;gap:1px;text-align:center}
 .vn-cell figcaption b{font-size:calc(var(--u)*1.15);text-transform:none;color:var(--red)}
 .vn-cell figcaption span{font-size:calc(var(--u)*.8);letter-spacing:.04em;color:var(--on-ink-soft);text-transform:none;line-height:1.35}
@@ -1304,8 +1305,51 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   <button type="button" id="prev">← Prev</button>
   <button type="button" id="next">Next →</button>
   <button type="button" id="full">Full</button>
+  <button type="button" id="present">Present mode</button>
 </nav>
 <p class="sr" id="live" aria-live="polite"></p>
+
+<main class="presenter-shell" id="presenter-shell" aria-label="Presenter notes">
+  <header class="ps-head">
+    <div><span class="ps-brand">MRKD</span><span class="ps-label">/ PRESENTER VIEW</span></div>
+    <div class="ps-head-actions">
+      <span class="ps-connection" id="ps-connection" role="status">Opening audience window…</span>
+      <button type="button" class="ps-quiet" id="ps-move-screen" hidden>Move to second screen</button>
+      <button type="button" class="ps-quiet" id="ps-reopen" hidden>Reopen audience</button>
+      <button type="button" class="ps-quiet" id="ps-exit">End presentation</button>
+    </div>
+  </header>
+  <div class="ps-body">
+    <section class="ps-main">
+      <div class="ps-current">
+        <div class="ps-topline"><span id="ps-count">01 / 35</span><span id="ps-target"></span></div>
+        <h1 id="ps-title"></h1>
+      </div>
+      <div class="ps-script" id="ps-script" aria-live="polite"></div>
+    </section>
+    <aside class="ps-side">
+      <div class="ps-panel ps-panel--dark">
+        <span class="ps-eyebrow">UP NEXT</span>
+        <strong id="ps-next-title"></strong>
+        <span id="ps-next-number"></span>
+      </div>
+      <div class="ps-panel">
+        <span class="ps-eyebrow">PRESENTATION TIME</span>
+        <strong class="ps-timer" id="ps-timer">00:00</strong>
+        <p>Move the audience window to the extended screen, then click its <b>Full</b> button. Use the controls below or arrow keys here; both screens will follow.</p>
+      </div>
+      <button type="button" class="ps-cheat-button" id="ps-cheat-toggle" aria-expanded="false">Lines to remember <span>↗</span></button>
+      <div class="ps-cheat" id="ps-cheat" hidden></div>
+      <button type="button" class="ps-cheat-button" id="ps-timing-toggle" aria-expanded="false">Timing guide <span>↗</span></button>
+      <div class="ps-cheat" id="ps-timing" hidden></div>
+    </aside>
+  </div>
+  <footer class="ps-controls">
+    <button type="button" id="ps-prev">← Previous slide</button>
+    <div class="ps-progress"><span id="ps-progress"></span></div>
+    <button type="button" id="ps-next">Next slide →</button>
+  </footer>
+</main>
 
 <script>
 (function(){
@@ -1319,9 +1363,16 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
 
   function clamp(n){ return Math.max(0, Math.min(slides.length - 1, n)); }
 
-  function goTo(i){
+  function goTo(i, behavior){
     current = clamp(i);
-    slides[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (behavior === 'instant'){
+      var previousBehavior = deck.style.scrollBehavior;
+      deck.style.scrollBehavior = 'auto';
+      deck.scrollTop = slides[current].offsetTop;
+      deck.style.scrollBehavior = previousBehavior;
+    } else {
+      slides[current].scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
     update();
   }
 
@@ -1329,7 +1380,10 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
     var pct = slides.length > 1 ? (current / (slides.length - 1)) * 100 : 100;
     progress.style.width = pct + '%';
     live.textContent = 'Slide ' + (current + 1) + ' of ' + slides.length;
+    document.dispatchEvent(new CustomEvent('mrkd:slidechange', { detail: { index: current } }));
   }
+
+  window.MRKD_DECK = { goTo: goTo, getIndex: function(){ return current; }, count: slides.length };
 
   // Track which slide is on screen when the user scrolls or swipes.
   if ('IntersectionObserver' in window){
@@ -1352,6 +1406,7 @@ code{font-family:var(--mono);font-weight:600;color:var(--ink);letter-spacing:0}
   });
 
   window.addEventListener('keydown', function(e){
+    if (document.body.classList.contains('presenter-mode')) return;
     var t = e.target;
     if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) return;
     switch (e.key){
@@ -2147,4 +2202,6 @@ radius.addEventListener('input',draw);sync.addEventListener('change',draw);docum
   });
 })();
 </script>
+<script src="presenter-notes.js"></script>
+<script src="presenter.js"></script>
 </html>

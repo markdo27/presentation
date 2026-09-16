@@ -30,6 +30,7 @@ jobs:
           mkdir -p _site
           cp vibecoding-deck.html _site/index.html
           cp vibecoding-deck.html _site/404.html
+          cp presenter.css presenter.js presenter-notes.js _site/
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

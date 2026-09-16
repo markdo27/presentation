@@ -1,16 +1,16 @@
 # MRKD Vibecoding Workshop
 
-The 34-slide talk given to Happiness Saigon: six months turning ideas into
+The 35-slide talk given to Happiness Saigon: six months turning ideas into
 shipped tools with AI coding agents, with extended case studies on
 **Liquid.Font** and **Vinafont**.
 
 **Live at <https://markdo27.github.io/presentation/>.**
 
-Everything is one self-contained file, `vibecoding-deck.html`. Open it in a
-browser — double-click is enough, and GitHub Pages serves the same file as
-the site index. There is no build step, no server, no
-dependencies, and nothing to install. The only network request is to Google
-Fonts for Doto and IBM Plex Mono; the deck still reads correctly without it.
+The slides are in `vibecoding-deck.html`. GitHub Pages serves it as the site
+index. The presenter view uses the adjacent `presenter.css`, `presenter.js`
+and `presenter-notes.js` files. There is no build step or server dependency.
+Google Fonts supplies Doto and IBM Plex Mono; the deck remains readable if
+they are unavailable.
 
 ## Presenting
 
@@ -20,9 +20,32 @@ Fonts for Doto and IBM Plex Mono; the deck still reads correctly without it.
 | Previous slide | `←` `↑` `PageUp` |
 | First / last | `Home` / `End` |
 | Fullscreen | the **Full** button, bottom right |
+| Presenter view | **Present mode**, bottom right |
 
 Slides snap one to a viewport and scale with it, so the deck fits 16:9 and
 16:10 projectors without reflowing. Print to PDF for a handout.
+
+### Two-screen presenter view
+
+Set your laptop to **Extend** display mode. Open the deck on the laptop and
+click **Present mode**. This opens an audience window and changes the laptop
+window to your script. On browsers that support window management, grant the
+display permission to place the audience window on the extended screen.
+Otherwise move it there manually. Click **Full** in the audience window;
+browsers require a click there to enter fullscreen. The optional **Move to
+second screen** button retries placement on supported browsers.
+
+Use the arrows, Space, or the on-screen buttons on the laptop to advance.
+If you advance by keyboard, mouse, or scroll in the audience window, the
+laptop notes follow. The laptop shows the current script, the next slide,
+the target time, a running timer, the cheat-sheet lines, and the full timing
+guide. **End
+presentation** closes the audience window and returns to the regular deck.
+If the audience window closes unexpectedly, use **Reopen audience**.
+
+The presenter notes come from the supplied workshop script and are stored
+in `presenter-notes.js`. The live site is public, so the notes file is also
+publicly readable even though the notes never appear on the audience screen.
 
 ## Editing
 
