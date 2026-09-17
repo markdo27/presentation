@@ -116,7 +116,7 @@
       'popup=yes,width=1280,height=720,resizable=yes,scrollbars=no');
     if (!audienceWindow){
       setStatus('Pop-up blocked — allow pop-ups and try again', false);
-      window.alert('Allow pop-ups for this site, then press Present mode again.');
+      window.alert('Allow pop-ups for this site, then press P again.');
       return false;
     }
     setStatus('Waiting for audience window…', false);
@@ -194,6 +194,19 @@
   }
 
   document.getElementById('present').addEventListener('click', enterPresenter);
+  // The Present mode button is hidden so the audience never sees it; P opens
+  // the presenter view instead. Modifier combinations are left alone so that
+  // Ctrl/Cmd+P still prints, and typing in a field never triggers it.
+  window.addEventListener('keydown', function(event){
+    if (event.key !== 'p' && event.key !== 'P') return;
+    if (event.ctrlKey || event.metaKey || event.altKey || event.repeat) return;
+    if (document.body.classList.contains('presenter-mode')) return;
+    var target = event.target;
+    var tag = target && target.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || (target && target.isContentEditable)) return;
+    event.preventDefault();
+    enterPresenter();
+  });
   document.getElementById('ps-exit').addEventListener('click', endPresenter);
   reopen.addEventListener('click', function(){
     if (openAudience() && 'getScreenDetails' in window && window.screen && window.screen.isExtended){

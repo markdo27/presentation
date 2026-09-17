@@ -20,7 +20,7 @@ they are unavailable.
 | Previous slide | `←` `↑` `PageUp` |
 | First / last | `Home` / `End` |
 | Fullscreen | the **Full** button, bottom right |
-| Presenter view | **Present mode**, bottom right |
+| Presenter view | press `P` (there is no on-screen button) |
 
 Slides snap one to a viewport and scale with it, so the deck fits 16:9 and
 16:10 projectors without reflowing. Print to PDF for a handout.
@@ -28,7 +28,7 @@ Slides snap one to a viewport and scale with it, so the deck fits 16:9 and
 ### Two-screen presenter view
 
 Set your laptop to **Extend** display mode. Open the deck on the laptop and
-click **Present mode**. This opens an audience window and changes the laptop
+press **P**. This opens an audience window and changes the laptop
 window to your script. On browsers that support window management, grant the
 display permission to place the audience window on the extended screen.
 Otherwise move it there manually. Click **Full** in the audience window;
